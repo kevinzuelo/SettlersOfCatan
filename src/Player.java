@@ -4,6 +4,7 @@ public class Player {
     private String name;
     private List<Card> resources;
     private List<Card> developmentCards;
+    private int victoryPoints = 0;
 
     public String getName() {
         return name;

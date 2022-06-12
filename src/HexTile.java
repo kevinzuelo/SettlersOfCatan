@@ -2,6 +2,7 @@ public class HexTile {
     private NumberTile numberTile;
     private String resource;
     private GamePiece[] vertices = new GamePiece[6];
+    private GamePiece[] roads = new Road[6];
 
     public NumberTile getNumberTile() {
         return numberTile;
@@ -9,6 +10,14 @@ public class HexTile {
 
     public GamePiece[] getVertices() {
         return vertices;
+    }
+
+    public GamePiece[] getRoads() {
+        return roads;
+    }
+
+    public void setRoads(GamePiece[] roads) {
+        this.roads = roads;
     }
 
     public void setVertices(GamePiece[] vertices) {
