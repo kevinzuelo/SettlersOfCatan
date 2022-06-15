@@ -13,10 +13,23 @@ public class Game {
 //        lumberTile.getVertices()[1] = new Settlement();
 //
 //        oreTile.getVertices()[5] = lumberTile.getVertices()[1];
+//
+//        Board board = new Board();
+//        board.generateGameBoard();
+//
+//        board.getRows().get(0)[0].setPiece(1,new Settlement());
 
-        Board board = new Board();
-        board.generateGameBoard();
+//        System.out.println(board.getRows().get(0)[0].getVertices()[1].getClass());
+//        board.connectTilesInRows();
+//
+//        System.out.println(board.getRows().get(0)[1].getVertices()[5].getClass());
 
+
+            Location a1 = new Location("A1");
+            Location a2 = new Location("A2");
+            Road a1Edge = new Road("blue");
+
+            a1.addEdge(a1,a2,a1Edge);
 
     }
 }

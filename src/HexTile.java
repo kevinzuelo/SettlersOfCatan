@@ -1,27 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class HexTile {
     private NumberTile numberTile;
     private String resource;
-    private GamePiece[] vertices = new GamePiece[6];
-    private GamePiece[] roads = new Road[6];
+    private List<Location> vertices;
+    private List<Edge> edges;
 
     public NumberTile getNumberTile() {
         return numberTile;
-    }
-
-    public GamePiece[] getVertices() {
-        return vertices;
-    }
-
-    public GamePiece[] getRoads() {
-        return roads;
-    }
-
-    public void setRoads(GamePiece[] roads) {
-        this.roads = roads;
-    }
-
-    public void setVertices(GamePiece[] vertices) {
-        this.vertices = vertices;
     }
 
     public void setNumberTile(NumberTile numberTile) {
@@ -34,5 +21,21 @@ public class HexTile {
 
     public void setResource(String resource) {
         this.resource = resource;
+    }
+
+    public List<Location> getVertices() {
+        return vertices;
+    }
+
+    public void setVertices(List<Location> vertices) {
+        this.vertices = vertices;
+    }
+
+    public List<Edge> getEdges() {
+        return edges;
+    }
+
+    public void setEdges(List<Edge> edges) {
+        this.edges = edges;
     }
 }

@@ -57,9 +57,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Game.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="6" />
+          <line>33</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="22" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -67,5 +71,13 @@
         <PinnedItemInfo parentTag="Board" memberName="gameBoard" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="board" />
+        <watch expression="board" />
+        <watch expression="board" language="JAVA" />
+        <watch expression="board" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
