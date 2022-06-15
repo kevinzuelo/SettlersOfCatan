@@ -2,6 +2,11 @@ public class GamePiece {
     private Player player;
     private String colorOfPieces;
 
+    public GamePiece(Player player) {
+        setPlayer(player);
+        setColorOfPieces(player.getColor());
+    }
+
     public Player getPlayer() {
         return player;
     }

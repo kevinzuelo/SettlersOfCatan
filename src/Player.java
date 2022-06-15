@@ -2,7 +2,18 @@ import java.util.List;
 
 public class Player {
     private String name;
+    private String color;
     private List<Card> resources;
+
+    public String getColor() {
+        return color;
+    }
+
+    public Player(String name, String color) {
+        this.name = name;
+        this.color = color;
+    }
+
     private List<Card> developmentCards;
     private int victoryPoints = 0;
 
