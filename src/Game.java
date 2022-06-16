@@ -1,6 +1,5 @@
 public class Game {
 
-
     public static void main(String[] args) {
 //        HexTile lumberTile = new HexTile();
 //        lumberTile.setResource("Lumber");
@@ -14,8 +13,8 @@ public class Game {
 //
 //        oreTile.getVertices()[5] = lumberTile.getVertices()[1];
 //
-//        Board board = new Board();
-//        board.generateGameBoard();
+        Board board = new Board();
+        board.generateGameBoard();
 //
 //        board.getRows().get(0)[0].setPiece(1,new Settlement());
 

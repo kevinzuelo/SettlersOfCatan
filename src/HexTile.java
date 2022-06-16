@@ -2,10 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HexTile {
+    private int tileNum;
     private NumberTile numberTile;
-    private String resource;
+
+    private Resource resource;
     private List<Location> vertices;
     private List<Edge> edges;
+
+    public HexTile(int num) {
+        tileNum = num;
+    }
 
     public NumberTile getNumberTile() {
         return numberTile;
@@ -15,20 +21,21 @@ public class HexTile {
         this.numberTile = numberTile;
     }
 
-    public String getResource() {
+    public Resource getResource() {
         return resource;
     }
 
-    public void setResource(String resource) {
+    public HexTile setResource(Resource resource) {
         this.resource = resource;
+        return this;
     }
 
     public List<Location> getVertices() {
         return vertices;
     }
 
-    public void setVertices(List<Location> vertices) {
-        this.vertices = vertices;
+    public void addLocation (Location location) {
+        vertices.add(location);
     }
 
     public List<Edge> getEdges() {
