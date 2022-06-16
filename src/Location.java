@@ -21,5 +21,11 @@ public class Location {
 
     public void setGamePiece(GamePiece gamePiece) {
         this.gamePiece = gamePiece;
+        if(gamePiece.getClass().getSimpleName().equals("Settlement")) {
+            gamePiece.getPlayer().addVictoryPoints(1);
+        }
+        else if(gamePiece.getClass().getSimpleName().equals("City")) {
+            gamePiece.getPlayer().addVictoryPoints(2);
+        }
     }
 }

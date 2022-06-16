@@ -29,7 +29,10 @@ public class Game {
             Road a1Edge = new Road(kevin);
 
             a1.setGamePiece(new Settlement(kevin));
+            a2.setGamePiece(new City(kevin));
             a1.addEdge(a1,a2,a1Edge);
+
+
 
     }
 }

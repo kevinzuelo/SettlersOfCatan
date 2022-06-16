@@ -3,6 +3,7 @@ import java.util.List;
 public class Player {
     private String name;
     private String color;
+    private int victoryPoints = 0;
     private List<Card> resources;
 
     public String getColor() {
@@ -14,8 +15,16 @@ public class Player {
         this.color = color;
     }
 
+    public int getVictoryPoints() {
+        return victoryPoints;
+    }
+
+    public void addVictoryPoints(int victoryPoints) {
+        this.victoryPoints += victoryPoints;
+    }
+
     private List<Card> developmentCards;
-    private int victoryPoints = 0;
+
 
     public String getName() {
         return name;
