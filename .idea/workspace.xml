@@ -84,15 +84,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Game.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="22" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Game.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -106,6 +106,8 @@
         <watch expression="board" />
         <watch expression="board" language="JAVA" />
         <watch expression="board" language="JAVA" />
+        <watch expression="a2.edges.get(0).locations.get(1)" />
+        <watch expression="a1.edges.get(0).locations.get(1)" />
       </configuration>
     </watches-manager>
   </component>
