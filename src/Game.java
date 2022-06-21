@@ -4,12 +4,6 @@ public class Game {
 
     public static void main(String[] args) {
 
-        JFrame frame = new JFrame("Settlers of Catan");
-        frame.setSize(800,600);
-        ImageIcon icon = new ImageIcon("img/catan.jpg");
-        frame.add(new JLabel(icon));
-        frame.setVisible(true);
-
 
         Board board = new Board();
         board.generateGameBoard();

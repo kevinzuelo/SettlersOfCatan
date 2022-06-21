@@ -37,7 +37,7 @@ public class NumberTile {
         numberTiles.add(new NumberTile('G',9,4));
         numberTiles.add(new NumberTile('H',12,1));
         numberTiles.add(new NumberTile('I',11,2));
-        numberTiles.add(new NumberTile('J',4,3));        numberTiles.add(new NumberTile('A',5,4));
+        numberTiles.add(new NumberTile('J',4,3));
         numberTiles.add(new NumberTile('K',8,5));
         numberTiles.add(new NumberTile('L',10,3));
         numberTiles.add(new NumberTile('M',9,4));
