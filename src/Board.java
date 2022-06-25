@@ -1,11 +1,6 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class Board {
     private HexTile[] gameBoard;
-
 
     public Board(){
         gameBoard = new HexTile[19];
@@ -26,22 +21,9 @@ public class Board {
         return row;
     }
 
-    public void connectAllLocations() {
-
-    }
-
-//    public void connectTilesInRows() {
-//        for(HexTile[] row : rows) {
-//            for (int i = 0; i < row.length - 1; i++) {
-//                row[i].setVertex;
-//            }
-//        }
-//    }
-
     public void generateGameBoard() {
         HexTile[] gameBoard = generateRow(19);
         this.gameBoard = gameBoard;
     }
-
 
 }

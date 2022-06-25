@@ -94,7 +94,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Game.java</url>
-          <line>28</line>
+          <line>18</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
