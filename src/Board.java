@@ -18,13 +18,16 @@ public class Board {
             //TODO fix if desert is first tile
             if(row[i].getResource().equals(Resource.desert)) {
                 j--;
-                continue;
             }
             else {
                 row[i].setNumberTile(NumberTile.numberTiles.get(j));
             }
         }
         return row;
+    }
+
+    public void connectAllLocations() {
+
     }
 
 //    public void connectTilesInRows() {

@@ -47,6 +47,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -94,7 +95,7 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Game.java</url>
           <line>28</line>
-          <option name="timeStamp" value="32" />
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -111,6 +112,10 @@
         <watch expression="board" language="JAVA" />
         <watch expression="a2.edges.get(0).locations.get(1)" />
         <watch expression="a1.edges.get(0).locations.get(1)" />
+        <watch expression="temp.get(1).edges" />
+        <watch expression="temp.get(0)" />
+        <watch expression="temp.get(0)" />
+        <watch expression="temp.get(0)" />
       </configuration>
     </watches-manager>
   </component>

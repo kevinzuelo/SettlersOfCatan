@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.List;
 
 public class Game {
 
@@ -16,14 +17,13 @@ public class Game {
 //        System.out.println(board.getRows().get(0)[1].getVertices()[5].getClass());
 
             Player kevin = new Player("Kevin", "Blue");
-            Location a1 = new Location("A1");
-            Location a2 = new Location("A2");
-            Road a1Edge = new Road(kevin);
 
-            a1.setGamePiece(new Settlement(kevin));
-            a2.setGamePiece(new City(kevin));
-            a1.addEdge(a1,a2,a1Edge);
 
+
+            Location.LOCATIONS.get(0).setGamePiece(new Settlement(kevin));
+            Location.LOCATIONS.get(1).setGamePiece(new City(kevin));
+
+            List<Location> temp = Location.LOCATIONS;
 
 
     }
