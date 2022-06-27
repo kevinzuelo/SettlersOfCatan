@@ -12,6 +12,7 @@ public class Board {
             row[i] = new HexTile(i).setResource(Resource.resourcePool.get(i));
             //TODO fix if desert is first tile
             if(row[i].getResource().equals(Resource.desert)) {
+                row[i].setHasRobber(true);
                 j--;
             }
             else {

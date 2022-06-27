@@ -5,6 +5,7 @@ public class HexTile {
     private int tileNum;
     private NumberTile numberTile;
     private Resource resource;
+    private boolean hasRobber = false;
 
     public HexTile(int num) {
         tileNum = num;
@@ -27,4 +28,7 @@ public class HexTile {
         return this;
     }
 
+    public void setHasRobber(boolean hasRobber) {
+        this.hasRobber = hasRobber;
+    }
 }
