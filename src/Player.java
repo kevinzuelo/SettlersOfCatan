@@ -5,6 +5,8 @@ public class Player {
     private String color;
     private int victoryPoints = 0;
     private List<Card> resources;
+    private boolean hasLongestRoad = false;
+    private boolean hasLargestArmy = false;
 
     public String getColor() {
         return color;
