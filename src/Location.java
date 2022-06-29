@@ -121,17 +121,52 @@ public class Location {
         adjHexTiles.add(hexTile);
     }
 
+    public GamePiece getGamePiece() {
+        return this.gamePiece;
+    }
+
+    public boolean canPlacePiece(Player player) {
+        if(!hasRoad(player)) {
+            System.out.println("Must place building connecting to one of your roads");
+            return false;
+        }
+        for(Edge edge : edges) {
+            for(Location location : edge.getLocations()) {
+                if(location.getGamePiece() != null) {
+                    System.out.println("Cannot place building one space away");
+                    return false;
+
+                }
+            }
+        }
+        return true;
+    }
+
+    public boolean hasRoad(Player player) {
+        for(Edge edge : edges) {
+            if (edge.getRoad() != null && edge.getRoad().getColorOfPieces().equals(player.getColor())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     public void setGamePiece(GamePiece gamePiece) { //TODO Distance Rule: must place settlements two spaces away from each other
-        //Distance Rule: If I want to place a piece on a location i should check the adjTiles of that location and compare the odd/even vertices...?
-        //example: if i want to place on a location on index 0,2 or 4 of a hexTile i just need to check that the adjTiles locations 1,3 or 5 does not contain a building
-        this.gamePiece = gamePiece;
+        //Distance Rule: Check Location's edges and make sure their locations don't contain a gamepiece.
+        // since the spot i want to place a piece on has to be null i can just check that all locations in edges are null
+        // eg: every edge has a "from location" and "to location", if the location i want to put a piece on has 3 edges i can check that all 6 locations are null
 
-        if(gamePiece.getClass().getSimpleName().equals("Settlement")) {
-            gamePiece.getPlayer().addVictoryPoints(1);
+        if(canPlacePiece(gamePiece.getPlayer())) {
+            this.gamePiece = gamePiece;
+
+            if(gamePiece.getClass().getSimpleName().equals("Settlement")) {
+                gamePiece.getPlayer().addVictoryPoints(1);
+            }
+            else if(gamePiece.getClass().getSimpleName().equals("City")) {
+                gamePiece.getPlayer().addVictoryPoints(1);
+            }
         }
-        else if(gamePiece.getClass().getSimpleName().equals("City")) {
-            gamePiece.getPlayer().addVictoryPoints(1);
-        }
+
     }
 }

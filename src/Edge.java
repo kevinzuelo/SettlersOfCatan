@@ -14,12 +14,24 @@ public class Edge {
 
     }
 
-    public List<Location> getLocation() {
+    public List<Location> getLocations() {
         return locations;
+    }
+
+    public List<GamePiece> getLocationsPieces() {
+        List<GamePiece> locationsPieces = new ArrayList<>();
+
+        for(Location location : locations) {
+            locationsPieces.add(location.getGamePiece());
+        }
+        return locationsPieces;
     }
 
     public void setRoad(Road road) {
         this.road = road;
     }
 
+    public Road getRoad() {
+        return road;
+    }
 }
